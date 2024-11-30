@@ -1,0 +1,171 @@
+*,*::after,*::before {  
+    box-sizing: border-box;
+}
+
+body, ul, ol, h1, h2, h3, p {
+    margin: 0;
+}
+
+ul, ol {
+    padding: 0;
+    list-style-type: none;
+}
+
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+img{
+    max-width: 100%;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    position: relative;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    overflow: hidden; /* Para recortar la imagen que se superpone */
+}
+
+header img {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: auto;
+    min-width: 100%; /* Ajustar el ancho mínimo de la imagen al 100% del encabezado */
+    z-index: -1;
+}
+
+
+.seccion {
+   
+    width: 80%;
+    height: auto;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin: 0 auto 20px; /* Centrar horizontalmente con margin y agregar espacio inferior */
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    display: flex; /* Utilizar flexbox */
+    flex-direction: column; /* Alinear los elementos en columna */
+    justify-content: center; /* Centrar horizontal y verticalmente */
+    align-items: center; /* Centrar horizontal y verticalmente */
+    box-shadow: #111;
+}
+
+.seccion:hover{
+    transform: scale(1.03); /* Aumentar el tamaño del elemento al pasarlo por encima */
+}
+
+.seccion img {
+    display: block; /* Para evitar espacios no deseados debajo de la imagen */
+    width: 50%; /* Ajusta la imagen al ancho completo de su contenedor */
+    border-radius: 20px; /* Bordes redondeados solo en la parte superior */
+}
+
+.seccion h2 {
+    margin-top: 20px; /* Espacio superior */
+    font-size: 24px; /* Tamaño del texto */
+    text-align: center;
+
+}
+
+.seccion p {
+    margin-top: 20px; /* Espacio superior */
+    font-size: 16px; /* Tamaño del texto */
+    line-height: 1.6; /* Espaciado entre líneas */
+    margin-bottom: 20px;
+    text-align: center;
+    color: #666;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    
+}
+
+
+table:hover{
+    transform: scale(1.03); /* Aumentar el tamaño del elemento al pasarlo por encima */
+}
+
+td {
+    padding: 10px;
+    border: 1px solid #ccc;
+   
+}
+
+img {
+    max-width: 50%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Estilos específicos para la tabla */
+
+td:first-child {
+    font-weight: bold;
+    width: 10%; /* Ancho de la primera columna */
+}
+
+td:nth-child(2),
+td:nth-child(3) {
+    width: 45%; /* Ancho de la segunda y tercera columna */
+}
+
+tr{
+    border-radius: 20%;
+}
+
+/* Estilos para la tabla */
+
+table {
+    
+    width: 80%;
+    border-collapse: collapse;
+    margin: 20px auto; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Añadir una sombra suave */
+}
+
+/* Estilos para las celdas de la tabla */
+
+td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    transition: all 0.3s ease; /* Añadir una transición suave */
+    
+}
+
+/* Efecto de hover para las celdas */
+
+td:hover {
+    background-color: #f0f0f0; /* Cambiar el color de fondo en hover */
+    transform: translateY(-2px); /* Elevar ligeramente la celda */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Añadir una sombra más pronunciada */
+}
+
+
+.back-link {
+    display: inline-block;
+    margin-bottom: 20px;
+    color: #ffffff; /* Color del enlace */
+    text-decoration: none; /* Quitar subrayado */
+    font-size: 16px; /* Tamaño del texto */
+}
+
+.back-link:hover {
+    text-decoration: underline; /* Subrayar en hover */
+}

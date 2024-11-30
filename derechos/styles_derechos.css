@@ -1,0 +1,159 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body,
+ul,
+ol,
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+ul,
+ol {
+  padding: 0;
+  list-style-type: none;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  position: relative;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  overflow: hidden; /* Para recortar la imagen que se superpone */
+}
+
+header img {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: auto;
+  min-width: 100%; /* Ajustar el ancho mínimo de la imagen al 100% del encabezado */
+  z-index: -1;
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 20px;
+  color: #ffffff; /* Color del enlace */
+  text-decoration: none; /* Quitar subrayado */
+  font-size: 16px; /* Tamaño del texto */
+}
+
+.back-link:hover {
+  text-decoration: underline; /* Subrayar en hover */
+}
+
+.sections-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 10px; /* Reducir el espacio entre los elementos */
+    padding: 30px;
+    margin: 30px;
+}
+
+.section {
+    width: 90%;
+    height: auto;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin: 0 auto 20px; /* Centrar horizontalmente con margin y agregar espacio inferior */
+    padding: 40px;
+
+    background-color: #f9f9f9;
+    display: flex; /* Utilizar flexbox */
+    flex-direction: column; /* Alinear los elementos en columna */
+    justify-content: center; /* Centrar horizontal y verticalmente */
+    align-items: center; /* Centrar horizontal y verticalmente */
+    box-shadow: #111;
+
+}
+
+.section:hover{
+    transform: scale(1.03); /* Aumentar el tamaño del elemento al pasarlo por encima */
+}
+
+.section h3 {
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.section p {
+    color: #666;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.section_pimera {
+    width: 90%;
+    height: auto;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin: 0 auto 20px; /* Centrar horizontalmente con margin y agregar espacio inferior */
+    padding: 20px;
+    margin-top: 30px;
+    background-color: #f9f9f9;
+    display: flex; /* Utilizar flexbox */
+    flex-direction: column; /* Alinear los elementos en columna */
+    justify-content: center; /* Centrar horizontal y verticalmente */
+    align-items: center; /* Centrar horizontal y verticalmente */
+    box-shadow: #111;
+
+}
+
+.section_pimera:hover{
+    transform: scale(1.03); /* Aumentar el tamaño del elemento al pasarlo por encima */
+}
+
+.section_pimera h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.section_pimera p {
+    color: #666;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.section_pimera img{
+    width: 30%;
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+
+
+
+@media screen and (min-width: 1200px) {
+    .sections-container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .sections-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

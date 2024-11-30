@@ -1,0 +1,180 @@
+*,*::after,*::before {  
+    box-sizing: border-box;
+}
+
+body, ul, ol, h1, h2, h3, p {
+    margin: 0;
+}
+
+ul, ol {
+    padding: 0;
+    list-style-type: none;
+}
+
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+img{
+    max-width: 100%;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    position: relative;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    overflow: hidden; /* Para recortar la imagen que se superpone */
+}
+
+header img {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: auto;
+    min-width: 100%; /* Ajustar el ancho mínimo de la imagen al 100% del encabezado */
+    z-index: -1;
+}
+.menu {
+  margin-top: 20px;
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #006eff;
+  display: inline-block;
+}
+
+nav li {
+  float: left;
+}
+
+nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav li a:hover {
+  background-color: #111;
+}
+
+main {
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+/* Estilos generales */
+h1 {
+  text-align: center;
+}
+
+h3 {
+  margin-top: 10px; /* Espacio superior */
+  font-size: 24px; /* Tamaño del texto */
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+p {
+  text-align: center;
+}
+
+table {
+  width: 80%;
+  margin: 20px auto; 
+  border-collapse: collapse;
+  margin-top: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Añadir una sombra suave */
+}
+
+table:hover {
+  transform: scale(
+    1.03
+  ); /* Aumentar el tamaño del elemento al pasarlo por encima */
+}
+
+td {
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+img {
+  max-width: 50%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Estilos específicos para la tabla */
+
+td:first-child {
+  align-items: center;
+  font-weight: bold;
+  width: 1%; /* Ancho de la primera columna */
+}
+
+td:nth-child(2) {
+  width: 50%; /* Ancho de la segunda columna */
+}
+
+tr {
+  border-radius: 20%;
+}
+
+td {
+  padding: 10px;
+  border: 1px solid #ccc;
+  transition: all 0.3s ease; /* Añadir una transición suave */
+}
+
+td:hover {
+  background-color: #f0f0f0; /* Cambiar el color de fondo en hover */
+  transform: translateY(-2px); /* Elevar ligeramente la celda */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Añadir una sombra más pronunciada */
+}
+
+.back-link {
+    display: inline-block;
+    margin-bottom: 20px;
+    color: #ffffff; /* Color del enlace */
+    text-decoration: none; /* Quitar subrayado */
+    font-size: 16px; /* Tamaño del texto */
+}
+
+.back-link:hover {
+    text-decoration: underline; /* Subrayar en hover */
+}
+
+/* Ajustes de responsive */
+
+@media only screen and (max-width: 600px) {
+  /* Cambios de estilo para dispositivos con un ancho máximo de 600px */
+
+  td {
+    font-size: 14px; /* Reducción del tamaño del texto en las celdas */
+  }
+
+  td:first-child {
+    width: 50%; /* Reducción del ancho de la primera columna */
+  }
+
+  td:nth-child(2) {
+    width: 100%; /* Ajuste del ancho de la segunda columna al 100% */
+  }
+}
